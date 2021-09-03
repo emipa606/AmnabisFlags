@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Amnabi.YourUnnamedFaction>Your Unnamed Faction</Amnabi.YourUnnamedFaction>
+  <Amnabi.BackgroundColor>BackgroundColor</Amnabi.BackgroundColor>
+  <Amnabi.PathNameExample>Eg. C:\SomePathName\Doge (without the .png extention)</Amnabi.PathNameExample>
+  <Amnabi.ImportPNG>Import PNG</Amnabi.ImportPNG>
+  <Amnabi.useFlagOutlineBelt>Show flag outline (Belt)</Amnabi.useFlagOutlineBelt>
+  <Amnabi.useFlagOutline>Show flag outline</Amnabi.useFlagOutline>
+  <Amnabi.use3DBeltBanner>Use 3D banner belts(Experimental)</Amnabi.use3DBeltBanner>
+  <Amnabi.swayBeltBanners>Sway flags on banner belts</Amnabi.swayBeltBanners>
+  <Amnabi.YFLIP>Flips a pattern on the Y axis.</Amnabi.YFLIP>
+  <Amnabi.XFLIP>Flips a pattern on the X axis.</Amnabi.XFLIP>
+  <Amnabi.OptionWarning>Most of these options below require a reload to properly take effect.</Amnabi.OptionWarning>
+  <Amnabi.renderFancyWave>Fancy flag sway</Amnabi.renderFancyWave>
+  <Amnabi.renderPlantWave>Basic flag sway (requires plant sway option)</Amnabi.renderPlantWave>
+  <Amnabi.renderStatic>No flag sway</Amnabi.renderStatic>
+  <Amnabi.Faction>Your Faction</Amnabi.Faction>
+  <Amnabi.OtherSettlement>Other Settlements</Amnabi.OtherSettlement>
+  <Amnabi.OtherFaction>Other Faction</Amnabi.OtherFaction>
+  <Amnabi.Clone>Clone</Amnabi.Clone>
+  <Amnabi.Up>Up</Amnabi.Up>
+  <Amnabi.Down>Down</Amnabi.Down>
+  <Amnabi.Rename>Rename</Amnabi.Rename>
+  <Amnabi.Load>Load</Amnabi.Load>
+  <Amnabi.Overwrite>Overwrite</Amnabi.Overwrite>
+  <Amnabi.CurrentFlag>Current Flag</Amnabi.CurrentFlag>
+  <Amnabi.Save>Save</Amnabi.Save>
+  <Amnabi.Settlement>Settlements</Amnabi.Settlement>
+  <Amnabi.EnterID.Desc>Each flag with the same ID will display the same flag. If you edit a flag with the same ID, changes will apply to all those flags.</Amnabi.EnterID.Desc>
+  <Amnabi.EnterID>Enter ID</Amnabi.EnterID>
+  <Amnabi.CustomPurpose>Custom Purpose</Amnabi.CustomPurpose>
+  <Amnabi.Uncantonize>Uncantonize</Amnabi.Uncantonize>
+  <Amnabi.Cantonize>Cantonize</Amnabi.Cantonize>
+  <Pattern_WingA>Wing A</Pattern_WingA>
+  <Pattern_WingB>Wing B</Pattern_WingB>
+  <Pattern_WingC>Wing C</Pattern_WingC>
+  <Pattern_Star8>Star 8</Pattern_Star8>
+  <Pattern_RomanCrown>Roman Crown</Pattern_RomanCrown>
+  <Pattern_ShieldA>Shield A</Pattern_ShieldA>
+  <Pattern_ShieldB>Shield B</Pattern_ShieldB>
+  <Pattern_AK47>AK-47</Pattern_AK47>
+  <Pattern_Fire>Fire</Pattern_Fire>
+  <Pattern_Circle>Circle</Pattern_Circle>
+  <Pattern_Diamond>Diamond</Pattern_Diamond>
+  <Pattern_E_Cresent>Cresent</Pattern_E_Cresent>
+  <Pattern_SemiCircle>Semicircle</Pattern_SemiCircle>
+  <Pattern_Square>Square</Pattern_Square>
+  <Pattern_Star5>5-Pointed Star</Pattern_Star5>
+  <Pattern_Star6>6-Pointed Star</Pattern_Star6>
+  <Pattern_TriangleA>Right-angle Triangle</Pattern_TriangleA>
+  <Pattern_TriangleB>Isosceles Triangle</Pattern_TriangleB>
+  <Pattern_E_Hammer>Hammer</Pattern_E_Hammer>
+  <Pattern_E_Sickle>Sickle</Pattern_E_Sickle>
+  <Pattern_E_Sword>Sword</Pattern_E_Sword>
+  <Pattern_E_Sticks>Sticks</Pattern_E_Sticks>
+  <Pattern_E_Axe>Axe</Pattern_E_Axe>
+  <Pattern_E_Arrow>Arrow</Pattern_E_Arrow>
+  <Pattern_E_Skull>Skull</Pattern_E_Skull>
+  <Pattern_Wave>Wave A</Pattern_Wave>
+  <Pattern_WaveB>Wave B</Pattern_WaveB>
+  <Category.Animals>Animals</Category.Animals>
+  <Category.BasicShape>Basic Shapes</Category.BasicShape>
+  <Category.WeaponTool>Weapons and Tools</Category.WeaponTool>
+  <Category.Misc>Misc.</Category.Misc>
+  <Amnabi.randomlyGenerateFlagsForAI>Generate flags for AI(Experimental, may take a long time)</Amnabi.randomlyGenerateFlagsForAI>
+  <Amnabi.ModifyOtherFactionFlags>Allow modifying other faction's flags</Amnabi.ModifyOtherFactionFlags>
+  <Amnabi.ModifyOtherFactionFlags.Desc>Used for roleplay or debug purposes.</Amnabi.ModifyOtherFactionFlags.Desc>
+  <Amnabi.DisplayFlagOnWorldMap>Display flag on world map</Amnabi.DisplayFlagOnWorldMap>
+  <Amnabi.DisplayFactionFlagIfNoSettlementFlagExists>Display faction flag on world map if no settlement flag exists</Amnabi.DisplayFactionFlagIfNoSettlementFlagExists>
+  <Amnabi.Preset.Desc>Saves or load a flag.</Amnabi.Preset.Desc>
+  <Amnabi.ChooseProvince.Desc>Choose a province to represent.</Amnabi.ChooseProvince.Desc>
+  <Amnabi.DesignFlag.Desc>Edits a flag.</Amnabi.DesignFlag.Desc>
+  <Amnabi.Preset>Save/Load</Amnabi.Preset>
+  <Amnabi.ChooseProvince>Select Purpose</Amnabi.ChooseProvince>
+  <Amnabi.DesignFlag>Design Flag</Amnabi.DesignFlag>
+  <Amnabi.ApplyCreaseOnFlag>Apply crease on flag</Amnabi.ApplyCreaseOnFlag>
+</LanguageData>

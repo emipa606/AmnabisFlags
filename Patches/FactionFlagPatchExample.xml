@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Amnabi's Flags</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+			  <Amnabi.FlagPatternDef>
+				<defName>Pattern_PFF_FactionNameHere</defName>
+				<texture>FlagPathHere</texture>	Texture should have a 1.5 : 1 width height ratio
+				<usedForFaction>FactionDefHere</usedForFaction>
+				<probability>1</probability> If there are multiple defs for a faction it will pick randomly based on this weight
+			  </Amnabi.FlagPatternDef>
+			</value>
+		</match>
+	</Operation>-->
+  <!--<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Amnabi's Flags</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+			  <Amnabi.FlagPatternDef>
+				<defName>Pattern_PFF_FactionNameHere0</defName>
+				<texture>FlagTest</texture>
+				<usedForFaction>PlayerColony</usedForFaction>
+				<probability>1</probability>
+			  </Amnabi.FlagPatternDef>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Amnabi's Flags</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+			  <Amnabi.FlagPatternDef>
+				<defName>Pattern_PFF_FactionNameHere1</defName>
+				<texture>FlagTest</texture>
+				<usedForFaction>OutlanderCivil</usedForFaction>
+				<probability>1</probability>
+			  </Amnabi.FlagPatternDef>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Amnabi's Flags</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+			  <Amnabi.FlagPatternDef>
+				<defName>Pattern_PFF_FactionNameHere2</defName>
+				<texture>FlagTest</texture>
+				<usedForFaction>OutlanderRough</usedForFaction>
+				<probability>1</probability>
+			  </Amnabi.FlagPatternDef>
+			</value>
+		</match>
+	</Operation>-->
+</Patch>

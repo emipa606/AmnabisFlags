@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>DDGDTest</defName>
+  </DesignatorDropdownGroupDef>
+  <ThingDef ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <defName>AMN_WallFlag</defName>
+    <label>flag on a wall</label>
+    <description>A flag on a wall.</description>
+    <graphicData>
+      <texPath>Things/FlagPole/FlagOnWall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1,1</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <thingCategories>
+      <li>Buildings</li>
+    </thingCategories>
+    <castEdgeShadows>false</castEdgeShadows>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <fillPercent>0.05</fillPercent>
+    <statBases>
+      <Mass>1</Mass>
+      <MaxHitPoints>20</MaxHitPoints>
+      <WorkToMake>100</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <placeWorkers>
+      <li>Amnabi.PlaceWorker_WallFlag</li>
+    </placeWorkers>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <comps>
+      <li Class="Amnabi.CompProperties_Flag">
+        <offsetX>0</offsetX>
+        <offsetY>0</offsetY>
+        <scaleX>1.0</scaleX>
+        <scaleY>1.0</scaleY>
+        <drawOnWall>true</drawOnWall>
+      </li>
+    </comps>
+    <costStuffCount>4</costStuffCount>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <pathCost>50</pathCost>
+    <passability>Standable</passability>
+    <designationCategory>Furniture</designationCategory>
+    <designatorDropdown>DDGDTest</designatorDropdown>
+    <uiIconScale>0.3</uiIconScale>
+    <clearBuildingArea>false</clearBuildingArea>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <defName>AMN_PoleFlag</defName>
+    <label>flagpole</label>
+    <description>A flagpole. Put a flag on it!</description>
+    <graphicData>
+      <texPath>Things/FlagPole/FlagPole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(0.08, 1.0, 0.08)</volume>
+        <offset>(0, 0, 0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.3,0.4,0.4)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <rotatable>false</rotatable>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <thingCategories>
+      <li>Buildings</li>
+    </thingCategories>
+    <castEdgeShadows>false</castEdgeShadows>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <fillPercent>0.05</fillPercent>
+    <statBases>
+      <Mass>10</Mass>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>100</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <comps>
+      <li Class="Amnabi.CompProperties_Flag">
+        <offsetX>0</offsetX>
+        <offsetY>0.95</offsetY>
+        <scaleX>1.0</scaleX>
+        <scaleY>1.0</scaleY>
+      </li>
+    </comps>
+    <costStuffCount>20</costStuffCount>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Furniture</designationCategory>
+    <uiIconScale>0.3</uiIconScale>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <defName>AMN_PoleFlagTall</defName>
+    <label>tall flagpole</label>
+    <description>A tall flagpole. Put a flag on it!</description>
+    <graphicData>
+      <texPath>Things/FlagPole/FlagPoleTall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(8,8)</drawSize>
+      <shadowData>
+        <volume>(0.08, 2.0, 0.08)</volume>
+        <offset>(0, 0, 0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.3,0.4,0.4)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>Buildings</li>
+    </thingCategories>
+    <castEdgeShadows>false</castEdgeShadows>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <fillPercent>0.05</fillPercent>
+    <statBases>
+      <Mass>20</Mass>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>200</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <comps>
+      <li Class="Amnabi.CompProperties_Flag">
+        <offsetX>0</offsetX>
+        <offsetY>2.6</offsetY>
+        <scaleX>1.0</scaleX>
+        <scaleY>1.0</scaleY>
+      </li>
+    </comps>
+    <costStuffCount>45</costStuffCount>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Furniture</designationCategory>
+    <uiIconScale>0.3</uiIconScale>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <defName>AMN_PoleFlagVertical</defName>
+    <label>vertical flagpole</label>
+    <description>A flagpole. Put a flag on it!</description>
+    <graphicData>
+      <texPath>Things/FlagPole/FlagPoleVertical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(0.08, 1.0, 0.08)</volume>
+        <offset>(0, 0, 0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.3,0.4,0.4)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <rotatable>false</rotatable>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <thingCategories>
+      <li>Buildings</li>
+    </thingCategories>
+    <castEdgeShadows>false</castEdgeShadows>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <fillPercent>0.05</fillPercent>
+    <statBases>
+      <Mass>10</Mass>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>100</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <comps>
+      <li Class="Amnabi.CompProperties_Flag">
+        <offsetX>-0.5</offsetX>
+        <offsetY>1.8</offsetY>
+        <scaleX>1.0</scaleX>
+        <scaleY>1.0</scaleY>
+        <FlagDisplayType>Vertical</FlagDisplayType>
+      </li>
+    </comps>
+    <costStuffCount>20</costStuffCount>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Furniture</designationCategory>
+    <uiIconScale>0.3</uiIconScale>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <defName>AMN_PoleFlagTallVertical</defName>
+    <label>tall vertical flagpole</label>
+    <description>A tall flagpole. Put a flag on it!</description>
+    <graphicData>
+      <texPath>Things/FlagPole/FlagPoleTallVertical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(8,8)</drawSize>
+      <shadowData>
+        <volume>(0.08, 2.0, 0.08)</volume>
+        <offset>(0, 0, 0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.3,0.4,0.4)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <rotatable>false</rotatable>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <thingCategories>
+      <li>Buildings</li>
+    </thingCategories>
+    <castEdgeShadows>false</castEdgeShadows>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <fillPercent>0.05</fillPercent>
+    <statBases>
+      <Mass>20</Mass>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>200</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <comps>
+      <li Class="Amnabi.CompProperties_Flag">
+        <offsetX>-0.5</offsetX>
+        <offsetY>3.6</offsetY>
+        <scaleX>1.0</scaleX>
+        <scaleY>1.0</scaleY>
+        <FlagDisplayType>Vertical</FlagDisplayType>
+      </li>
+    </comps>
+    <costStuffCount>45</costStuffCount>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Furniture</designationCategory>
+    <uiIconScale>0.3</uiIconScale>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RuleDef>
+    <defName>AmnabiFlags</defName>
+    <symbol>amnabiFlags</symbol>
+    <resolvers>
+      <li Class="Amnabi.SymbolResolver_Flags" />
+    </resolvers>
+  </RuleDef>
+</Defs>

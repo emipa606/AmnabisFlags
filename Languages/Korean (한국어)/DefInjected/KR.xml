@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AMN_PoleFlag.label>깃대</AMN_PoleFlag.label>
+  <AMN_PoleFlag.description>깃발을 달아 놓을수 있는 깃대.</AMN_PoleFlag.description>
+  <AMN_PoleFlagTall.label>긴 깃대</AMN_PoleFlagTall.label>
+  <AMN_PoleFlagTall.description>깃발을 달아 놓을수 있는 깃대. 길다.</AMN_PoleFlagTall.description>
+  <AMN_PoleFlagVertical.label>수직 깃대</AMN_PoleFlagVertical.label>
+  <AMN_PoleFlagVertical.description>깃발을 수직으로 달아 놓을수 있는 깃대.</AMN_PoleFlagVertical.description>
+  <AMN_PoleFlagTallVertical.label>긴 수직 깃대</AMN_PoleFlagTallVertical.label>
+  <AMN_PoleFlagTallVertical.description>깃발을 수직으로 달아 놓을수 있는 깃대. 길다.</AMN_PoleFlagTallVertical.description>
+  <Apparel_BannerBeltStyleA.label>깃발 벨트(A형)</Apparel_BannerBeltStyleA.label>
+  <Apparel_BannerBeltStyleA.description>깃발을 꽂을수있는 벨트.</Apparel_BannerBeltStyleA.description>
+  <Apparel_BannerBeltStyleB.label>깃발 벨트(B형)</Apparel_BannerBeltStyleB.label>
+  <Apparel_BannerBeltStyleB.description>깃발을 꽂을수있는 벨트.</Apparel_BannerBeltStyleB.description>
+  <Apparel_BannerBeltStyleC.label>깃발 벨트(C형)</Apparel_BannerBeltStyleC.label>
+  <Apparel_BannerBeltStyleC.description>깃발을 꽂을수있는 벨트.</Apparel_BannerBeltStyleC.description>
+</LanguageData>

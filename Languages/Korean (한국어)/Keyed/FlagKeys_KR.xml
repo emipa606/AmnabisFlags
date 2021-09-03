@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Amnabi.YourUnnamedFaction>플레이어의 팩션</Amnabi.YourUnnamedFaction>
+  <Amnabi.BackgroundColor>배경 색</Amnabi.BackgroundColor>
+  <Amnabi.PathNameExample>입력예시= C:\SomePathName\Doge (끝에.png 붙이지 말고)</Amnabi.PathNameExample>
+  <Amnabi.ImportPNG>PNG 불러오기</Amnabi.ImportPNG>
+  <Amnabi.useFlagOutlineBelt>깃발 테두리 표시(벨트)</Amnabi.useFlagOutlineBelt>
+  <Amnabi.useFlagOutline>깃발 테두리 표시</Amnabi.useFlagOutline>
+  <Amnabi.use3DBeltBanner>3차원 깃발벨트 사용(실험용)</Amnabi.use3DBeltBanner>
+  <Amnabi.swayBeltBanners>깃발벨트에 휘날림 적용</Amnabi.swayBeltBanners>
+  <Amnabi.YFLIP>문양을 상하반전시킴니다.</Amnabi.YFLIP>
+  <Amnabi.XFLIP>문양을 좌우반전시킴니다.</Amnabi.XFLIP>
+  <Amnabi.OptionWarning>이하 설정들이 제데로 적용되기 위해선 재시작이 필요할수도 있습니다.</Amnabi.OptionWarning>
+  <Amnabi.renderFancyWave>고급 깃발 휘날림</Amnabi.renderFancyWave>
+  <Amnabi.renderPlantWave>기본 휘날림 (메뉴에서 식물 휘날리는 설정 필요)</Amnabi.renderPlantWave>
+  <Amnabi.renderStatic>깃발 휘날림 없음</Amnabi.renderStatic>
+  <Amnabi.Faction>국가</Amnabi.Faction>
+  <Amnabi.OtherSettlement>타국가 정착지</Amnabi.OtherSettlement>
+  <Amnabi.OtherFaction>타국가</Amnabi.OtherFaction>
+  <Amnabi.Clone>복제</Amnabi.Clone>
+  <Amnabi.Up>위로</Amnabi.Up>
+  <Amnabi.Down>밑으로</Amnabi.Down>
+  <Amnabi.Rename>개명</Amnabi.Rename>
+  <Amnabi.Load>불러오기</Amnabi.Load>
+  <Amnabi.Overwrite>덮어쓰기</Amnabi.Overwrite>
+  <Amnabi.CurrentFlag>현재 깃발</Amnabi.CurrentFlag>
+  <Amnabi.Save>저장</Amnabi.Save>
+  <Amnabi.Settlement>정착지</Amnabi.Settlement>
+  <Amnabi.EnterID.Desc>같은 ID를 가진 깃발들은 똑같이 생겼습니다. 같은 ID를 가진 깃발을 편집할 경우, 나머지 깃발들도 같이 편집됩니다,</Amnabi.EnterID.Desc>
+  <Amnabi.EnterID>ID입력</Amnabi.EnterID>
+  <Amnabi.CustomPurpose>그외 용도</Amnabi.CustomPurpose>
+  <Amnabi.Uncantonize>깃발 다시 확대</Amnabi.Uncantonize>
+  <Amnabi.Cantonize>깃발 1/4로 줄이고 왼쪽 위에 놓기</Amnabi.Cantonize>
+  <Pattern_WingA>날개 1</Pattern_WingA>
+  <Pattern_WingB>날개 2</Pattern_WingB>
+  <Pattern_WingC>날개 3</Pattern_WingC>
+  <Pattern_Star8>팔각별</Pattern_Star8>
+  <Pattern_RomanCrown>로마왕관</Pattern_RomanCrown>
+  <Pattern_ShieldA>방패 1</Pattern_ShieldA>
+  <Pattern_ShieldB>방패 2</Pattern_ShieldB>
+  <Pattern_AK47>AK-47</Pattern_AK47>
+  <Pattern_Fire>불</Pattern_Fire>
+  <Pattern_Circle>원</Pattern_Circle>
+  <Pattern_Diamond>마름모</Pattern_Diamond>
+  <Pattern_E_Cresent>초승달</Pattern_E_Cresent>
+  <Pattern_SemiCircle>반원</Pattern_SemiCircle>
+  <Pattern_Square>네모</Pattern_Square>
+  <Pattern_Star5>5각 별</Pattern_Star5>
+  <Pattern_Star6>6각 별</Pattern_Star6>
+  <Pattern_TriangleA>직각삼각형</Pattern_TriangleA>
+  <Pattern_TriangleB>이등변삼각형</Pattern_TriangleB>
+  <Pattern_E_Hammer>망치</Pattern_E_Hammer>
+  <Pattern_E_Sickle>낫</Pattern_E_Sickle>
+  <Pattern_E_Sword>검</Pattern_E_Sword>
+  <Pattern_E_Sticks>막대기 뭉치</Pattern_E_Sticks>
+  <Pattern_E_Axe>도끼</Pattern_E_Axe>
+  <Pattern_E_Arrow>화살</Pattern_E_Arrow>
+  <Pattern_E_Skull>해골</Pattern_E_Skull>
+  <Pattern_Wave>파도</Pattern_Wave>
+  <Pattern_WaveB>파도 2</Pattern_WaveB>
+  <Category.Animals>동물</Category.Animals>
+  <Category.BasicShape>기본 도형</Category.BasicShape>
+  <Category.WeaponTool>무기와 도구</Category.WeaponTool>
+  <Category.Misc>다른무늬</Category.Misc>
+  <Amnabi.randomlyGenerateFlagsForAI>AI 깃발 자동생성(실험용, 생성하는데 오래걸릴수도 있음)</Amnabi.randomlyGenerateFlagsForAI>
+  <Amnabi.ModifyOtherFactionFlags>타국가 정착지와 국기 편집</Amnabi.ModifyOtherFactionFlags>
+  <Amnabi.ModifyOtherFactionFlags.Desc>역할극 또는 디버그용.</Amnabi.ModifyOtherFactionFlags.Desc>
+  <Amnabi.DisplayFactionFlagIfNoSettlementFlagExists>정착지 깃발이 없을경우 국기를 대신 세계지도에 표시합니다</Amnabi.DisplayFactionFlagIfNoSettlementFlagExists>
+  <Amnabi.DisplayFlagOnWorldMap>세계지도에 깃발 표시</Amnabi.DisplayFlagOnWorldMap>
+  <Amnabi.Preset.Desc>깃발을 저장하거나 불러옴니다.</Amnabi.Preset.Desc>
+  <Amnabi.ChooseProvince.Desc>정착지를 선택합니다.</Amnabi.ChooseProvince.Desc>
+  <Amnabi.DesignFlag.Desc>깃발 편집을 편집합니다.</Amnabi.DesignFlag.Desc>
+  <Amnabi.Preset>저장/불러오기</Amnabi.Preset>
+  <Amnabi.ChooseProvince>용도 선택</Amnabi.ChooseProvince>
+  <Amnabi.DesignFlag>깃발 편집</Amnabi.DesignFlag>
+  <Amnabi.ApplyCreaseOnFlag>깃발에 주름 효과 적용</Amnabi.ApplyCreaseOnFlag>
+</LanguageData>
