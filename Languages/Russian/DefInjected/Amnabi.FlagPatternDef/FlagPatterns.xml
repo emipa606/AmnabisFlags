@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- ThemeTags: Anarchist Socialist Hereditary Authoritarian Dangerous Revolution Spritual -->
+  <Pattern_Circle.label>круг</Pattern_Circle.label>
+  <Pattern_Diamond.label>ромб</Pattern_Diamond.label>
+  <Pattern_E_Cresent.label>полумесяц</Pattern_E_Cresent.label>
+  <Pattern_SemiCircle.label>полукруг</Pattern_SemiCircle.label>
+  <Pattern_Square.label>квадрат</Pattern_Square.label>
+  <Pattern_Star5.label>5-конечная звезда</Pattern_Star5.label>
+  <Pattern_Star6.label>6-конечная звезда</Pattern_Star6.label>
+  <Pattern_TriangleA.label>треугольник 1</Pattern_TriangleA.label>
+  <Pattern_TriangleB.label>треугольник 2</Pattern_TriangleB.label>
+  <Pattern_E_Hammer.label>молот</Pattern_E_Hammer.label>
+  <Pattern_E_Sickle.label>серп</Pattern_E_Sickle.label>
+  <Pattern_E_Sword.label>меч</Pattern_E_Sword.label>
+  <Pattern_E_Sticks.label>палочки Фасции</Pattern_E_Sticks.label>
+  <Pattern_E_Axe.label>топор</Pattern_E_Axe.label>
+  <Pattern_E_Arrow.label>стрела</Pattern_E_Arrow.label>
+  <Pattern_E_Skull.label>череп и кости</Pattern_E_Skull.label>
+  <Pattern_Wave.label>волна</Pattern_Wave.label>
+  <Pattern_WaveB.label>волна B</Pattern_WaveB.label>
+  <Pattern_ShieldA.label>Щит А</Pattern_ShieldA.label>
+  <Pattern_ShieldB.label>Щит B</Pattern_ShieldB.label>
+  <Pattern_AK47.label>AK47</Pattern_AK47.label>
+  <Pattern_Fire.label>огонь</Pattern_Fire.label>
+  <Pattern_WingA.label>Крыло А</Pattern_WingA.label>
+  <Pattern_WingB.label>Крыло B</Pattern_WingB.label>
+  <Pattern_WingC.label>Крыло C</Pattern_WingC.label>
+  <Pattern_Star8.label>8-конечная звезда</Pattern_Star8.label>
+  <Pattern_RomanCrown.label>Римская корона</Pattern_RomanCrown.label>
+</LanguageData>

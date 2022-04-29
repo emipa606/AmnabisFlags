@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Amnabi's Flags (Continued)</name>
   <packageId>Mlie.AmnabisFlags</packageId>
@@ -60,14 +60,6 @@ Flags wont wave indoors, and it also depends on the weather.
 My image wont load!
 Only custom images in the png format is supported for now. vector images, jpg, tga, dds etc arent supported
 
-Also...
-Plz feed me so I can keep making mods...
-
-https://ko-fi.com/amnabi
-
-Visit my discord for progress on my projects
-https://discord.gg/RVGmUS3sbz
-
 [img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
@@ -79,4 +71,3 @@ https://discord.gg/RVGmUS3sbz
 [/list]
 </description>
 </ModMetaData>
-

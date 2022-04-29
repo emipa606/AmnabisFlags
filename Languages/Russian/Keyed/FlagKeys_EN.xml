@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Amnabi.YourUnnamedFaction>Ваша неназванная фракция</Amnabi.YourUnnamedFaction>
+  <Amnabi.BackgroundColor>Цвет фона</Amnabi.BackgroundColor>
+  <Amnabi.PathNameExample>Например: C:\SomePathName\Doge (without the .png extention)</Amnabi.PathNameExample>
+  <Amnabi.ImportPNG>Импорт PNG</Amnabi.ImportPNG>
+  <Amnabi.useFlagOutlineBelt>Показать контур флага (лента)</Amnabi.useFlagOutlineBelt>
+  <Amnabi.useFlagOutline>Показать контур флага</Amnabi.useFlagOutline>
+  <Amnabi.use3DBeltBanner>Используйте ленты для 3D-баннеров (экспериментально)</Amnabi.use3DBeltBanner>
+  <Amnabi.swayBeltBanners>Поворотные флажки на баннерных лентах</Amnabi.swayBeltBanners>
+  <Amnabi.YFLIP>Переворачивает узор по оси Y.</Amnabi.YFLIP>
+  <Amnabi.XFLIP>Переворачивает узор по оси X.</Amnabi.XFLIP>
+  <Amnabi.OptionWarning>Большинство из приведенных ниже параметров требуют перезагрузки, чтобы они вступили в силу.</Amnabi.OptionWarning>
+  <Amnabi.renderFancyWave>Причудливое раскачивание флага</Amnabi.renderFancyWave>
+  <Amnabi.renderPlantWave>Базовое раскачивание флага (треб. опция раскачивания растений)</Amnabi.renderPlantWave>
+  <Amnabi.renderStatic>Не раскачивать флаг</Amnabi.renderStatic>
+  <Amnabi.Faction>Ваша фракция</Amnabi.Faction>
+  <Amnabi.OtherSettlement>Прочие расчеты</Amnabi.OtherSettlement>
+  <Amnabi.OtherFaction>Другая фракция</Amnabi.OtherFaction>
+  <Amnabi.Clone>Клон</Amnabi.Clone>
+  <Amnabi.Up>Вверх</Amnabi.Up>
+  <Amnabi.Down>Вниз</Amnabi.Down>
+  <Amnabi.Rename>Переименовать</Amnabi.Rename>
+  <Amnabi.Load>Загрузить</Amnabi.Load>
+  <Amnabi.Overwrite>Перезаписать</Amnabi.Overwrite>
+  <Amnabi.CurrentFlag>Текущий флаг</Amnabi.CurrentFlag>
+  <Amnabi.Save>Сохранить</Amnabi.Save>
+  <Amnabi.Settlement>Поселения</Amnabi.Settlement>
+  <Amnabi.EnterID.Desc>Каждый флаг с одинаковым ID будет отображать один и тот же флаг. Если вы отредактируете флаг с одинаковым ID, изменения будут применены ко всем этим флагам.</Amnabi.EnterID.Desc>
+  <Amnabi.EnterID>Введите ID</Amnabi.EnterID>
+  <Amnabi.CustomPurpose>Пользовательское назначение</Amnabi.CustomPurpose>
+  <Amnabi.Uncantonize>Некантонизировать</Amnabi.Uncantonize>
+  <Amnabi.Cantonize>Кантонизировать</Amnabi.Cantonize>
+  <Pattern_WingA>Крыло A</Pattern_WingA>
+  <Pattern_WingB>Крыло B</Pattern_WingB>
+  <Pattern_WingC>Крыло C</Pattern_WingC>
+  <Pattern_Star8>Звезда-8</Pattern_Star8>
+  <Pattern_RomanCrown>Римская корона</Pattern_RomanCrown>
+  <Pattern_ShieldA>Щит A</Pattern_ShieldA>
+  <Pattern_ShieldB>Щит B</Pattern_ShieldB>
+  <Pattern_AK47>AK-47</Pattern_AK47>
+  <Pattern_Fire>Огонь</Pattern_Fire>
+  <Pattern_Circle>Круг</Pattern_Circle>
+  <Pattern_Diamond>Ромб</Pattern_Diamond>
+  <Pattern_E_Cresent>Полумесяц</Pattern_E_Cresent>
+  <Pattern_SemiCircle>Полукруг</Pattern_SemiCircle>
+  <Pattern_Square>Квадрат</Pattern_Square>
+  <Pattern_Star5>5-конечная звезда</Pattern_Star5>
+  <Pattern_Star6>6-конечная звезда</Pattern_Star6>
+  <Pattern_TriangleA>Прямоугольный треугольник</Pattern_TriangleA>
+  <Pattern_TriangleB>Равнобедренный треугольник</Pattern_TriangleB>
+  <Pattern_E_Hammer>Молот</Pattern_E_Hammer>
+  <Pattern_E_Sickle>Серп</Pattern_E_Sickle>
+  <Pattern_E_Sword>Меч</Pattern_E_Sword>
+  <Pattern_E_Sticks>Палочки</Pattern_E_Sticks>
+  <Pattern_E_Axe>Топор</Pattern_E_Axe>
+  <Pattern_E_Arrow>Стрела</Pattern_E_Arrow>
+  <Pattern_E_Skull>Череп</Pattern_E_Skull>
+  <Pattern_Wave>Волна A</Pattern_Wave>
+  <Pattern_WaveB>Волна B</Pattern_WaveB>
+  <Category.Animals>Животные</Category.Animals>
+  <Category.BasicShape>Основные фигуры</Category.BasicShape>
+  <Category.WeaponTool>Оружие/инструменты</Category.WeaponTool>
+  <Category.Misc>Разное</Category.Misc>
+  <Amnabi.randomlyGenerateFlagsForAI>Генерировать флаги для ИИ (экспериментально, может занять много времени)</Amnabi.randomlyGenerateFlagsForAI>
+  <Amnabi.ModifyOtherFactionFlags>Разрешить изменять флаги других фракций</Amnabi.ModifyOtherFactionFlags>
+  <Amnabi.ModifyOtherFactionFlags.Desc>Используется для ролевой игры или отладки.</Amnabi.ModifyOtherFactionFlags.Desc>
+  <Amnabi.DisplayFlagOnWorldMap>Отображать флаг на карте мира</Amnabi.DisplayFlagOnWorldMap>
+  <Amnabi.DisplayFactionFlagIfNoSettlementFlagExists>Отображать флаг фракции на карте мира, если флага поселения не существует</Amnabi.DisplayFactionFlagIfNoSettlementFlagExists>
+  <Amnabi.Preset.Desc>Сохранить или загрузить флаг.</Amnabi.Preset.Desc>
+  <Amnabi.ChooseProvince.Desc>Выберите провинцию, которую вы будете представлять.</Amnabi.ChooseProvince.Desc>
+  <Amnabi.DesignFlag.Desc>Редактировать флаг.</Amnabi.DesignFlag.Desc>
+  <Amnabi.Preset>Сохранить/Загрузить</Amnabi.Preset>
+  <Amnabi.ChooseProvince>Выбрать цель</Amnabi.ChooseProvince>
+  <Amnabi.DesignFlag>Дизайн флага</Amnabi.DesignFlag>
+  <Amnabi.ApplyCreaseOnFlag>Нанести складку на флаг</Amnabi.ApplyCreaseOnFlag>
+</LanguageData>

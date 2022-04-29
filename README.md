@@ -37,14 +37,6 @@ Flags wont wave indoors, and it also depends on the weather.
 My image wont load!
 Only custom images in the png format is supported for now. vector images, jpg, tga, dds etc arent supported
 
-Also...
-Plz feed me so I can keep making mods...
-
-https://ko-fi.com/amnabi
-
-Visit my discord for progress on my projects
-https://discord.gg/RVGmUS3sbz
-
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
 

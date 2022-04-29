@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AMN_WallFlag.label>флаг на стене</AMN_WallFlag.label>
+  <AMN_WallFlag.description>Флаг, размещенный на стене.</AMN_WallFlag.description>
+  <AMN_PoleFlag.label>флагшток</AMN_PoleFlag.label>
+  <AMN_PoleFlag.description>Флагшток. Установите на нем флаг!</AMN_PoleFlag.description>
+  <AMN_PoleFlagTall.label>высокий флагшток</AMN_PoleFlagTall.label>
+  <AMN_PoleFlagTall.description>Высокий флагшток. Установите на нем флаг!</AMN_PoleFlagTall.description>
+  <AMN_PoleFlagVertical.label>вертикальный флагшток</AMN_PoleFlagVertical.label>
+  <AMN_PoleFlagVertical.description>Флагшток. Установите на нем флаг!</AMN_PoleFlagVertical.description>
+  <AMN_PoleFlagTallVertical.label>высокий вертикальный флагшток</AMN_PoleFlagTallVertical.label>
+  <AMN_PoleFlagTallVertical.description>Высокий флагшток. Установите на нем флаг!</AMN_PoleFlagTallVertical.description>
+</LanguageData>
