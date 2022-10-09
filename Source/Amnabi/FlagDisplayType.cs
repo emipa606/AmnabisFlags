@@ -1,9 +1,8 @@
-namespace Amnabi
+namespace Amnabi;
+
+public enum FlagDisplayType
 {
-    public enum FlagDisplayType
-    {
-        Default,
-        Corner,
-        Vertical
-    }
+    Default,
+    Corner,
+    Vertical
 }

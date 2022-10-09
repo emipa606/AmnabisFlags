@@ -1,21 +1,20 @@
 using Verse;
 
-namespace Amnabi
+namespace Amnabi;
+
+public class GC_Flag : GameComponent
 {
-    public class GC_Flag : GameComponent
+    public static GC_Flag instance;
+
+    public int instanceID;
+
+    public GC_Flag(Game game)
     {
-        public static GC_Flag instance;
+        instance = this;
+        instanceID = Rand.Int;
+    }
 
-        public int instanceID;
-
-        public GC_Flag(Game game)
-        {
-            instance = this;
-            instanceID = Rand.Int;
-        }
-
-        public override void ExposeData()
-        {
-        }
+    public override void ExposeData()
+    {
     }
 }

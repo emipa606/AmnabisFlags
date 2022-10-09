@@ -1,6 +1,5 @@
-namespace Amnabi
+namespace Amnabi;
+
+public class PR_MultiEmblem : PR_Emblem
 {
-    public class PR_MultiEmblem : PR_Emblem
-    {
-    }
 }

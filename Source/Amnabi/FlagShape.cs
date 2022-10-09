@@ -1,13 +1,12 @@
-namespace Amnabi
+namespace Amnabi;
+
+public enum FlagShape
 {
-    public enum FlagShape
-    {
-        Rectangle15,
-        Nepal,
-        Ohio,
-        Square,
-        TriangleDown,
-        TriangleUp,
-        Circle
-    }
+    Rectangle15,
+    Nepal,
+    Ohio,
+    Square,
+    TriangleDown,
+    TriangleUp,
+    Circle
 }

@@ -1,14 +1,13 @@
-namespace Amnabi
+namespace Amnabi;
+
+public enum FlagGenType
 {
-    public enum FlagGenType
-    {
-        None,
-        Settlement,
-        Faction,
-        Ideology,
-        Culture,
-        Religion,
-        Party,
-        Dynasty
-    }
+    None,
+    Settlement,
+    Faction,
+    Ideology,
+    Culture,
+    Religion,
+    Party,
+    Dynasty
 }

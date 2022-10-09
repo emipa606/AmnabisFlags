@@ -1,10 +1,9 @@
-namespace Amnabi
+namespace Amnabi;
+
+public enum PositioningType
 {
-    public enum PositioningType
-    {
-        Absolute,
-        Relative,
-        Percentage,
-        CorneredCenterPercentage
-    }
+    Absolute,
+    Relative,
+    Percentage,
+    CorneredCenterPercentage
 }

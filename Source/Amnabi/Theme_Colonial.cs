@@ -1,10 +1,9 @@
-namespace Amnabi
+namespace Amnabi;
+
+public class Theme_Colonial : ThemeTag
 {
-    public class Theme_Colonial : ThemeTag
+    public new double getProbability(FactionFlagTags fft)
     {
-        public new double getProbability(FactionFlagTags fft)
-        {
-            return 0.0;
-        }
+        return 0.0;
     }
 }

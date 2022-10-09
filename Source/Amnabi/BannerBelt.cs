@@ -1,13 +1,12 @@
 using RimWorld;
 
-namespace Amnabi
+namespace Amnabi;
+
+public class BannerBelt : Apparel
 {
-    public class BannerBelt : Apparel
+    public override void DrawWornExtras()
     {
-        public override void DrawWornExtras()
-        {
-            base.DrawWornExtras();
-            GetComp<CompFlag>().PawnWearDraw();
-        }
+        base.DrawWornExtras();
+        GetComp<CompFlag>().PawnWearDraw();
     }
 }

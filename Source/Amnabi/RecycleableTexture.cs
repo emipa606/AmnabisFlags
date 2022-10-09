@@ -1,37 +1,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Amnabi
+namespace Amnabi;
+
+public class RecycleableTexture
 {
-    public class RecycleableTexture
+    public static List<RecycleableTexture> recyclableStatic;
+
+    public Texture2D flagTextureCompiled;
+
+    public Material materialCompiiled;
+
+    public bool needsRefreshNextCall = false;
+
+    static RecycleableTexture()
     {
-        public static List<RecycleableTexture> recyclableStatic;
+        recyclableStatic = new List<RecycleableTexture>();
+    }
 
-        public Texture2D flagTextureCompiled;
+    private RecycleableTexture()
+    {
+    }
 
-        public Material materialCompiiled;
-
-        public bool needsRefreshNextCall = false;
-
-        static RecycleableTexture()
+    public static RecycleableTexture nextRecycleableTexture(bool pop = true)
+    {
+        if (recyclableStatic.Count <= 0)
         {
-            recyclableStatic = new List<RecycleableTexture>();
+            return new RecycleableTexture();
         }
 
-        private RecycleableTexture()
-        {
-        }
-
-        public static RecycleableTexture nextRecycleableTexture(bool pop = true)
-        {
-            if (recyclableStatic.Count <= 0)
-            {
-                return new RecycleableTexture();
-            }
-
-            var result = recyclableStatic[recyclableStatic.Count - 1];
-            recyclableStatic.RemoveAt(recyclableStatic.Count - 1);
-            return result;
-        }
+        var result = recyclableStatic[recyclableStatic.Count - 1];
+        recyclableStatic.RemoveAt(recyclableStatic.Count - 1);
+        return result;
     }
 }

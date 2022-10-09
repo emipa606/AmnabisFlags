@@ -1,11 +1,10 @@
 using UnityEngine;
 
-namespace Amnabi
-{
-    public class OffsetRotation
-    {
-        public Vector3 offset;
+namespace Amnabi;
 
-        public Quaternion rotate;
-    }
+public class OffsetRotation
+{
+    public Vector3 offset;
+
+    public Quaternion rotate;
 }

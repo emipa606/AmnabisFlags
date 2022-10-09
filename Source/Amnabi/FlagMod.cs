@@ -1,26 +1,30 @@
+using Mlie;
 using UnityEngine;
 using Verse;
 
-namespace Amnabi
+namespace Amnabi;
+
+public class FlagMod : Mod
 {
-    public class FlagMod : Mod
+    public static FlagSettings settings;
+
+    public static string currentVersion;
+
+    public FlagMod(ModContentPack content)
+        : base(content)
     {
-        public static FlagSettings settings;
+        settings = GetSettings<FlagSettings>();
+        currentVersion =
+            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.AmnabisFlags"));
+    }
 
-        public FlagMod(ModContentPack content)
-            : base(content)
-        {
-            settings = GetSettings<FlagSettings>();
-        }
+    public override void DoSettingsWindowContents(Rect inRect)
+    {
+        settings.DoWindowContents(inRect);
+    }
 
-        public override void DoSettingsWindowContents(Rect inRect)
-        {
-            settings.DoWindowContents(inRect);
-        }
-
-        public override string SettingsCategory()
-        {
-            return "Amnabi'sFlags";
-        }
+    public override string SettingsCategory()
+    {
+        return "Amnabi'sFlags";
     }
 }

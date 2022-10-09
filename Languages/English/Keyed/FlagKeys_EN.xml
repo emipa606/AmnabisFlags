@@ -7,6 +7,7 @@
   <Amnabi.useFlagOutlineBelt>Show flag outline (Belt)</Amnabi.useFlagOutlineBelt>
   <Amnabi.useFlagOutline>Show flag outline</Amnabi.useFlagOutline>
   <Amnabi.use3DBeltBanner>Use 3D banner belts(Experimental)</Amnabi.use3DBeltBanner>
+  <Amnabi.modVersion>Installed mod-version: {0}</Amnabi.modVersion>
   <Amnabi.swayBeltBanners>Sway flags on banner belts</Amnabi.swayBeltBanners>
   <Amnabi.YFLIP>Flips a pattern on the Y axis.</Amnabi.YFLIP>
   <Amnabi.XFLIP>Flips a pattern on the X axis.</Amnabi.XFLIP>

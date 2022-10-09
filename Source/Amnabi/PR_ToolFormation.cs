@@ -1,10 +1,9 @@
-namespace Amnabi
+namespace Amnabi;
+
+public class PR_ToolFormation : PR_EmblemInner
 {
-    public class PR_ToolFormation : PR_EmblemInner
+    public override void iterate(FactionFlagTags fft, PatternLayer layerNow, int depth)
     {
-        public override void iterate(FactionFlagTags fft, PatternLayer layerNow, int depth)
-        {
-            base.iterate(fft, layerNow, depth);
-        }
+        base.iterate(fft, layerNow, depth);
     }
 }

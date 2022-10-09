@@ -6,6 +6,7 @@ Update of Amnabis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2340981101
 
 - Made the pole-icons fit the gui
+- Russian translation added, thanks Dmitry6!
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
@@ -47,6 +48,7 @@ Only custom images in the png format is supported for now. vector images, jpg, t
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 
