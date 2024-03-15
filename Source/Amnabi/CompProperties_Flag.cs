@@ -4,20 +4,20 @@ namespace Amnabi;
 
 public class CompProperties_Flag : CompProperties
 {
-    public bool drawOnWall = false;
+    public readonly bool drawOnWall = false;
 
-    public FlagDisplayType FlagDisplayType = FlagDisplayType.Default;
+    public readonly FlagDisplayType FlagDisplayType = FlagDisplayType.Default;
 
-    public string graphicPathStick = "";
+    public readonly string graphicPathStick = "";
 
-    public string graphicPathTop = "";
+    public readonly string graphicPathTop = "";
+
+    public readonly float scaleX = 1f;
+
+    public readonly float scaleY = 1f;
     public float offsetX;
 
     public float offsetY;
-
-    public float scaleX = 1f;
-
-    public float scaleY = 1f;
 
     public CompProperties_Flag()
     {

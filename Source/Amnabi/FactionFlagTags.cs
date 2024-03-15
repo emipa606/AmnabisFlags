@@ -8,11 +8,11 @@ namespace Amnabi;
 
 public class FactionFlagTags : IExposable
 {
-    public static Dictionary<string, ThemeTag> stringToTheme;
+    public static readonly Dictionary<string, ThemeTag> stringToTheme;
 
-    public static List<string> uehf8742;
+    public static readonly List<string> uehf8742;
 
-    public Dictionary<string, ListColor> colorThemes = new Dictionary<string, ListColor>();
+    public readonly Dictionary<string, ListColor> colorThemes = new Dictionary<string, ListColor>();
     public Flag nationalFlag;
 
     public Dictionary<string, double> themeTags = new Dictionary<string, double>();
@@ -20,7 +20,7 @@ public class FactionFlagTags : IExposable
     static FactionFlagTags()
     {
         stringToTheme = new Dictionary<string, ThemeTag>();
-        uehf8742 = new List<string>();
+        uehf8742 = [];
         stringToTheme.Add("Colonial", new Theme_Colonial());
         stringToTheme.Add("Imperial", new Theme_Imperial());
         stringToTheme.Add("Global", new Theme_Global());
@@ -38,12 +38,12 @@ public class FactionFlagTags : IExposable
             extraTag = "Background";
         }
 
-        if (!colorThemes.ContainsKey(extraTag))
+        if (!colorThemes.TryGetValue(extraTag, out var theme))
         {
             return Color.white;
         }
 
-        return colorThemes[extraTag].internalList.MaxBy(x =>
+        return theme.internalList.MaxBy(x =>
             (backGroundContrast.currentBackgroundColor.a *
              ColorGeneratorT.GetContrast(backGroundContrast.currentBackgroundColor, x)) +
             (backGroundContrast.currentBackgroundColorN1.a *

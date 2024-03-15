@@ -39,7 +39,7 @@ public class Dialog_AssignPurposeToFlag : Window
         var num5 = FlagSettings.modifyOtherFactionsFlags ? num2 + num4 : 0;
         num5 += num + num3;
         var viewRect = new Rect(0f, 0f, outRect.width - 16f,
-            (num5 * 35f) + (FlagSettings.modifyOtherFactionsFlags ? 200f : 100f));
+            (num5 * EntryHeight) + (FlagSettings.modifyOtherFactionsFlags ? 200f : 100f));
         Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect);
         try
         {
@@ -52,7 +52,7 @@ public class Dialog_AssignPurposeToFlag : Window
                     assignable.unassign();
                 }
 
-                curY += 35f;
+                curY += EntryHeight;
             }
             else
             {
@@ -78,7 +78,7 @@ public class Dialog_AssignPurposeToFlag : Window
                     break;
                 }
 
-                curY += 35f;
+                curY += EntryHeight;
             }
 
             Widgets.ListSeparator(ref curY, viewRect.width, "Amnabi.Settlement".Translate());
@@ -96,7 +96,7 @@ public class Dialog_AssignPurposeToFlag : Window
                     break;
                 }
 
-                curY += 35f;
+                curY += EntryHeight;
             }
 
             if (FlagSettings.modifyOtherFactionsFlags)
@@ -116,7 +116,7 @@ public class Dialog_AssignPurposeToFlag : Window
                         break;
                     }
 
-                    curY += 35f;
+                    curY += EntryHeight;
                 }
 
                 Widgets.ListSeparator(ref curY, viewRect.width, "Amnabi.OtherSettlement".Translate());
@@ -134,7 +134,7 @@ public class Dialog_AssignPurposeToFlag : Window
                         break;
                     }
 
-                    curY += 35f;
+                    curY += EntryHeight;
                 }
             }
 

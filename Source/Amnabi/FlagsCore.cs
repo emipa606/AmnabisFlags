@@ -10,6 +10,7 @@ namespace Amnabi;
 
 public static class FlagsCore
 {
+    public const float GLOBALFLAGHEIGHT = 256f;
     public static bool FlagsLoaded;
 
     public static bool SocietyLoaded;
@@ -18,15 +19,13 @@ public static class FlagsCore
 
     public static Dictionary<string, Flag> flagIDToFlag = new Dictionary<string, Flag>();
 
-    public static List<Flag> presets = new List<Flag>();
+    public static List<Flag> presets = [];
 
     public static readonly string PrefFilePath = Path.Combine(GenFilePaths.ConfigFolderPath, "AmnabisFlags.xml");
 
     public static bool loaded;
 
-    public static float GLOBALFLAGWIDTH = 384f;
-
-    public static float GLOBALFLAGHEIGHT = 256f;
+    public static readonly float GLOBALFLAGWIDTH = 384f;
 
     public static Texture2D Pattern
     {
@@ -268,7 +267,7 @@ public static class FlagsCore
         catch (Exception ex)
         {
             Log.Error($"Exception loading FlagPreset: {ex}");
-            presets = new List<Flag>();
+            presets = [];
             randomLoadMode = false;
             Scribe.ForceStop();
         }

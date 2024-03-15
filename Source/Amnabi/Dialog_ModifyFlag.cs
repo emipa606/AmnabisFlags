@@ -250,7 +250,7 @@ public class Dialog_ModifyFlag : Window
         }
 
         var viewRect = new Rect(0f, 0f, outRect.width - 16f,
-            ((float)(Harmony_Flags.patternByCategory.Keys.Count + 1) / 4 * 35f) +
+            ((float)(HarmonyFlags.PatternByCategory.Keys.Count + 1) / 4 * 35f) +
             ((1 + (assignable.flag?.patternMax ?? 0)) * 35f) + 100f + 50f + 35f);
         Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect);
         try
@@ -619,10 +619,10 @@ public class Dialog_ModifyFlag : Window
             }
 
             var num13 = 4;
-            var a = Harmony_Flags.patternByCategory.Keys.Count + 1;
+            var a = HarmonyFlags.PatternByCategory.Keys.Count + 1;
             var num14 = 0;
             var num15 = viewRect.width / Mathf.Min(a, num13);
-            foreach (var key in Harmony_Flags.patternByCategory.Keys)
+            foreach (var key in HarmonyFlags.PatternByCategory.Keys)
             {
                 var rect6 = new Rect(num15 * num14, num9, num15, 32f);
                 num14++;
@@ -637,7 +637,7 @@ public class Dialog_ModifyFlag : Window
                     continue;
                 }
 
-                FloatMenuUtility.MakeMenu(Harmony_Flags.patternByCategory[key], fpd => fpd.defName.Translate(),
+                FloatMenuUtility.MakeMenu(HarmonyFlags.PatternByCategory[key], fpd => fpd.defName.Translate(),
                     fpd => delegate
                     {
                         if (assignable.flag == null)

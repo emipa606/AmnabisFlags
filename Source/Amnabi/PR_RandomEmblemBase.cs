@@ -13,7 +13,7 @@ public class PR_RandomEmblemBase : PR_EmblemBase
         }
 
         var bestColor = fft.getBestColor(layerNow, "EmblemBase");
-        var fpd = Harmony_Flags.patternByTags["EmblemBase"]
+        var fpd = HarmonyFlags.PatternByTags["EmblemBase"]
             .RandomElementByWeight(x => IntersectionAdjustedPoints(x, fft));
         layerNow.attachPost(layerNow.createFlagPatternMinScaled(fpd, bestColor, 0.5, 0.5, 0.0))
             .setBackgroundColorUpdate(bestColor);

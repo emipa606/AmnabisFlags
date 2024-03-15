@@ -6,7 +6,15 @@ namespace Amnabi;
 
 public class PatternLayer
 {
-    private readonly List<PatternLayer> child = new List<PatternLayer>();
+    private readonly List<PatternLayer> child = [];
+
+    public readonly List<FlagPattern> postFlagPatterns = [];
+
+    public readonly List<FlagPattern> preFlagPatterns = [];
+
+    public readonly Dictionary<string, int> tagOccupationNum = new Dictionary<string, int>();
+
+    public readonly Dictionary<string, int> tagOccupationNumTop = new Dictionary<string, int>();
     public PatternRecursive assigner;
 
     public Color currentBackgroundColor = new Color(0f, 0f, 0f, 0f);
@@ -15,14 +23,6 @@ public class PatternLayer
     public Rect innerrect;
 
     public PatternLayer parent;
-
-    public List<FlagPattern> postFlagPatterns = new List<FlagPattern>();
-
-    public List<FlagPattern> preFlagPatterns = new List<FlagPattern>();
-
-    public Dictionary<string, int> tagOccupationNum = new Dictionary<string, int>();
-
-    public Dictionary<string, int> tagOccupationNumTop = new Dictionary<string, int>();
 
     public float wRatio()
     {
@@ -106,10 +106,9 @@ public class PatternLayer
         return patternLayer;
     }
 
-    public PatternLayer attachPre(FlagPattern fp)
+    public void attachPre(FlagPattern fp)
     {
         preFlagPatterns.Add(fp);
-        return this;
     }
 
     public PatternLayer attachPost(FlagPattern fp)
@@ -147,25 +146,15 @@ public class PatternLayer
 
     public int tagT(string str)
     {
-        if (parent != null)
-        {
-            return parent.tagT(str);
-        }
-
-        if (tagOccupationNumTop.ContainsKey(str))
-        {
-            return tagOccupationNumTop[str];
-        }
-
-        return 0;
+        return parent?.tagT(str) ?? tagOccupationNumTop.GetValueOrDefault(str, 0);
     }
 
-    public PatternLayer tagT(string str, int i)
+    public void tagT(string str, int i)
     {
         if (parent != null)
         {
             parent.tagT(str, i);
-            return this;
+            return;
         }
 
         if (tagOccupationNumTop.ContainsKey(str))
@@ -174,7 +163,6 @@ public class PatternLayer
         }
 
         tagOccupationNumTop.Add(str, i);
-        return this;
     }
 
     public int tagS(string str)
@@ -185,9 +173,9 @@ public class PatternLayer
             num = parent.tagS(str);
         }
 
-        if (tagOccupationNum.ContainsKey(str))
+        if (tagOccupationNum.TryGetValue(str, out var value))
         {
-            return tagOccupationNum[str] + num;
+            return value + num;
         }
 
         return num;
@@ -195,15 +183,10 @@ public class PatternLayer
 
     public int tag(string str)
     {
-        if (tagOccupationNum.ContainsKey(str))
-        {
-            return tagOccupationNum[str];
-        }
-
-        return 0;
+        return tagOccupationNum.GetValueOrDefault(str, 0);
     }
 
-    public PatternLayer tag(string str, int i)
+    public void tag(string str, int i)
     {
         var num = 0;
         if (tagOccupationNum.ContainsKey(str))
@@ -214,7 +197,6 @@ public class PatternLayer
 
         tagT(str, tagT(str) + i - num);
         tagOccupationNum.Add(str, i);
-        return this;
     }
 
     public PatternLayer tagInc(string str, int i)

@@ -4,17 +4,17 @@ namespace Amnabi;
 
 public class PR_Emblem : PatternRecursive
 {
-    public static string EMBLEMINNERMUST = "EmblemInnerMust";
+    public static readonly string EMBLEMINNERMUST = "EmblemInnerMust";
 
-    public static string EMBLEMBACKMUST = "EmblemBackgroundMust";
+    public static readonly string EMBLEMBACKMUST = "EmblemBackgroundMust";
 
-    public static string EMBLEMOVERMUST = "EmblemOverMust";
+    public static readonly string EMBLEMOVERMUST = "EmblemOverMust";
 
-    public static string EMBLEMDONE = "EmblemDone";
+    public static readonly string EMBLEMDONE = "EmblemDone";
 
     public bool recurseLayer = false;
 
-    public override double getProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
+    protected override double getProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
     {
         var num = layerNow.tagT(EMBLEMDONE);
         var num2 = num switch

@@ -19,17 +19,17 @@ public class PatternRecursive
 
     public const string BACKGROUND = "Background";
 
-    public static List<PatternRecursive> allPatterns;
+    public static readonly List<PatternRecursive> allPatterns;
 
-    public static float VHBiasNormal;
+    public static readonly float VHBiasNormal;
 
-    public static float probabilityMultiplier;
+    public static readonly float probabilityMultiplier;
 
     public float baseProbabilityV = 1f;
 
     static PatternRecursive()
     {
-        allPatterns = new List<PatternRecursive>();
+        allPatterns = [];
         VHBiasNormal = 1.5f;
         probabilityMultiplier = 1f;
         allPatterns.Add(new PR_TriangularRightSplit
@@ -185,7 +185,7 @@ public class PatternRecursive
         }
     }
 
-    public static void ExecRandOrder(Action action0 = null, Action action1 = null, Action action2 = null,
+    protected static void ExecRandOrder(Action action0 = null, Action action1 = null, Action action2 = null,
         Action action3 = null)
     {
         var list = new List<Action>();
@@ -201,14 +201,14 @@ public class PatternRecursive
         }
     }
 
-    public static float IntersectionAdjustedPoints(FlagPatternDef fpd, FactionFlagTags fft)
+    protected static float IntersectionAdjustedPoints(FlagPatternDef fpd, FactionFlagTags fft)
     {
         var num = 0.1f;
         foreach (var themeTag in fpd.themeTags)
         {
-            if (fft.themeTags.ContainsKey(themeTag))
+            if (fft.themeTags.TryGetValue(themeTag, out var tag))
             {
-                num += (float)fft.themeTags[themeTag] * 4f;
+                num += (float)tag * 4f;
             }
         }
 
@@ -256,12 +256,12 @@ public class PatternRecursive
         return null;
     }
 
-    public virtual double getPreProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
+    protected virtual double getPreProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
     {
         return 0.0;
     }
 
-    public virtual double getProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
+    protected virtual double getProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
     {
         return 1.0;
     }

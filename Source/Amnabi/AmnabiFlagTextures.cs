@@ -7,26 +7,27 @@ namespace Amnabi;
 [StaticConstructorOnStartup]
 public static class AmnabiFlagTextures
 {
-    public static Dictionary<FlagShape, Material> materialParts = new Dictionary<FlagShape, Material>();
+    public static readonly Dictionary<FlagShape, Material> materialParts = new Dictionary<FlagShape, Material>();
 
-    public static Texture2D Nepal =
+    public static readonly Texture2D Nepal =
         FlagsCore.CreateTextureFromBase(ContentFinder<Texture2D>.Get("FlagShape/Nepal"));
 
-    public static Texture2D Ohio = FlagsCore.CreateTextureFromBase(ContentFinder<Texture2D>.Get("FlagShape/Ohio"));
+    public static readonly Texture2D Ohio =
+        FlagsCore.CreateTextureFromBase(ContentFinder<Texture2D>.Get("FlagShape/Ohio"));
 
-    public static Texture2D Rectangle15 =
+    public static readonly Texture2D Rectangle15 =
         FlagsCore.CreateTextureFromBase(ContentFinder<Texture2D>.Get("FlagShape/Rectangle15"));
 
-    public static Texture2D Square =
+    public static readonly Texture2D Square =
         FlagsCore.CreateTextureFromBase(ContentFinder<Texture2D>.Get("FlagShape/Square"));
 
-    public static Texture2D TriangleDown =
+    public static readonly Texture2D TriangleDown =
         FlagsCore.CreateTextureFromBase(ContentFinder<Texture2D>.Get("FlagShape/TriangleDown"));
 
-    public static Texture2D TriangleUp =
+    public static readonly Texture2D TriangleUp =
         FlagsCore.CreateTextureFromBase(ContentFinder<Texture2D>.Get("FlagShape/TriangleUp"));
 
-    public static Texture2D Circle =
+    public static readonly Texture2D Circle =
         FlagsCore.CreateTextureFromBase(ContentFinder<Texture2D>.Get("FlagShape/Circle"));
 
     public static Texture2D blankFlag;

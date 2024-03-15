@@ -5,9 +5,9 @@ using Verse;
 
 namespace Amnabi;
 
-public class FlagPattern : IExposable
+public class FlagPattern(FlagPatternDef fDef) : IExposable
 {
-    public static Dictionary<string, Texture2D> stringTexture2D = new Dictionary<string, Texture2D>();
+    public static readonly Dictionary<string, Texture2D> stringTexture2D = new Dictionary<string, Texture2D>();
 
     public float alpha = 1f;
 
@@ -17,7 +17,7 @@ public class FlagPattern : IExposable
 
     public string customURL;
 
-    public FlagPatternDef flagPatternDef;
+    public FlagPatternDef flagPatternDef = fDef;
 
     public float green = 0.5f;
 
@@ -31,23 +31,7 @@ public class FlagPattern : IExposable
 
     public float scaleY = 1f;
 
-    public FlagPattern(FlagPatternDef fDef)
-    {
-        flagPatternDef = fDef;
-    }
-
-    public Texture2D effectiveTexture
-    {
-        get
-        {
-            if (!customURL.NullOrEmpty())
-            {
-                return customURLLoad(customURL);
-            }
-
-            return flagPatternDef.Pattern;
-        }
-    }
+    public Texture2D effectiveTexture => !customURL.NullOrEmpty() ? customURLLoad(customURL) : flagPatternDef.Pattern;
 
     public void ExposeData()
     {
@@ -81,9 +65,9 @@ public class FlagPattern : IExposable
 
     public static Texture2D customURLLoad(string str)
     {
-        if (stringTexture2D.ContainsKey(str))
+        if (stringTexture2D.TryGetValue(str, out var load))
         {
-            return stringTexture2D[str];
+            return load;
         }
 
         var texture2D = LoadPNG(str);

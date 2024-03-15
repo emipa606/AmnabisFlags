@@ -31,7 +31,7 @@ public class Dialog_SaveLoadFlag : Window
         outRect.yMin += 20f;
         outRect.yMax -= 40f;
         outRect.width -= 16f;
-        var viewRect = new Rect(0f, 0f, outRect.width - 16f, ((FlagsCore.presets.Count + 1) * 35f) + 100f);
+        var viewRect = new Rect(0f, 0f, outRect.width - 16f, ((FlagsCore.presets.Count + 1) * EntryHeight) + 100f);
         Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect);
         try
         {
@@ -90,7 +90,7 @@ public class Dialog_SaveLoadFlag : Window
                     return;
                 }
 
-                num += 35f;
+                num += EntryHeight;
             }
 
             if (assignable.flag == null)

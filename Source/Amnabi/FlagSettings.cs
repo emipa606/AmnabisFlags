@@ -21,7 +21,7 @@ public class FlagSettings : ModSettings
 
     public static bool renderFancyWave = true;
 
-    public static int renderFancyWaveInt = 10;
+    public static readonly int renderFancyWaveInt = 10;
 
     public static bool use3DBeltBanner;
 
@@ -51,7 +51,7 @@ public class FlagSettings : ModSettings
 
     public void DoWindowContents(Rect inRect)
     {
-        var unused = Current.Game?.CurrentMap;
+        _ = Current.Game?.CurrentMap;
         var listing_Standard = new Listing_Standard
         {
             ColumnWidth = inRect.width - 34f

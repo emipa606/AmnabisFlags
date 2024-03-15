@@ -4,9 +4,9 @@ namespace Amnabi;
 
 public class PR_Split : PatternRecursive
 {
-    public int MI(int i, int depth)
+    protected int MI(int i, int depth)
     {
-        return depth == 0 ? i : i;
+        return i;
     }
 
     public override void iterate(FactionFlagTags fft, PatternLayer layerNow, int depth)
@@ -15,7 +15,7 @@ public class PR_Split : PatternRecursive
         layerNow.tagInc("FlagSplit", 1);
     }
 
-    public override double getProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
+    protected override double getProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
     {
         var num = layerNow.tagT("SplitSub");
         var num2 = 1f;

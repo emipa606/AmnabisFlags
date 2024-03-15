@@ -9,7 +9,7 @@ public class SymbolResolver_Flags : SymbolResolver
 
     public override void Resolve(ResolveParams rp)
     {
-        var unused = BaseGen.globalSettings.map;
+        _ = BaseGen.globalSettings.map;
         var singleThingDef = AmnabiFlagDefOfs.AMN_PoleFlagTall;
         if (singleThingDef == null)
         {

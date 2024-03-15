@@ -7,7 +7,7 @@ namespace Amnabi;
 
 public static class ColorGeneratorT
 {
-    public static Dictionary<Color, double> colourFrequency;
+    public static readonly Dictionary<Color, double> colourFrequency;
 
     static ColorGeneratorT()
     {

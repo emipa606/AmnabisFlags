@@ -4,7 +4,7 @@ namespace Amnabi;
 
 public class PR_TriangularRightSplit : PR_Split
 {
-    public override double getProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
+    protected override double getProbability(FactionFlagTags fft, PatternLayer layerNow, int depth)
     {
         if (layerNow.innerrect.width > layerNow.innerrect.height)
         {

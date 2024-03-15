@@ -9,22 +9,22 @@ using Verse;
 namespace Amnabi;
 
 [StaticConstructorOnStartup]
-public static class Harmony_Flags
+public static class HarmonyFlags
 {
-    public static Dictionary<string, HashSet<FlagPatternDef>> patternByCategory;
+    public static readonly Dictionary<string, HashSet<FlagPatternDef>> PatternByCategory;
 
-    public static Dictionary<string, HashSet<FlagPatternDef>> patternByTags;
+    public static readonly Dictionary<string, HashSet<FlagPatternDef>> PatternByTags;
 
-    public static Dictionary<FactionDef, List<FlagPatternDef>> prefabricatedFlagDefSort;
+    public static readonly Dictionary<FactionDef, List<FlagPatternDef>> PrefabricatedFlagDefSort;
 
-    public static List<WorldObject> temporaryWorldObjects;
+    public static readonly List<WorldObject> TemporaryWorldObjects;
 
-    static Harmony_Flags()
+    static HarmonyFlags()
     {
-        patternByCategory = new Dictionary<string, HashSet<FlagPatternDef>>();
-        patternByTags = new Dictionary<string, HashSet<FlagPatternDef>>();
-        prefabricatedFlagDefSort = new Dictionary<FactionDef, List<FlagPatternDef>>();
-        temporaryWorldObjects = new List<WorldObject>();
+        PatternByCategory = new Dictionary<string, HashSet<FlagPatternDef>>();
+        PatternByTags = new Dictionary<string, HashSet<FlagPatternDef>>();
+        PrefabricatedFlagDefSort = new Dictionary<FactionDef, List<FlagPatternDef>>();
+        TemporaryWorldObjects = [];
         FlagsCore.CheckLoadedAssemblies();
         FlagsCore.LoadPref();
         ensureFlagTextureLoadedInCurrentThread();
@@ -35,12 +35,12 @@ public static class Harmony_Flags
                 continue;
             }
 
-            if (!prefabricatedFlagDefSort.ContainsKey(allDef.usedForFaction))
+            if (!PrefabricatedFlagDefSort.ContainsKey(allDef.usedForFaction))
             {
-                prefabricatedFlagDefSort.Add(allDef.usedForFaction, new List<FlagPatternDef>());
+                PrefabricatedFlagDefSort.Add(allDef.usedForFaction, []);
             }
 
-            prefabricatedFlagDefSort[allDef.usedForFaction].Add(allDef);
+            PrefabricatedFlagDefSort[allDef.usedForFaction].Add(allDef);
         }
 
         foreach (var allDef2 in DefDatabase<FlagPatternDef>.AllDefs)
@@ -50,47 +50,46 @@ public static class Harmony_Flags
                 continue;
             }
 
-            if (!patternByCategory.ContainsKey(allDef2.category))
+            if (!PatternByCategory.ContainsKey(allDef2.category))
             {
-                patternByCategory.Add(allDef2.category, new HashSet<FlagPatternDef>());
+                PatternByCategory.Add(allDef2.category, []);
             }
 
-            patternByCategory[allDef2.category].Add(allDef2);
+            PatternByCategory[allDef2.category].Add(allDef2);
         }
 
         foreach (var allDef3 in DefDatabase<FlagPatternDef>.AllDefs)
         {
             foreach (var tag in allDef3.tags)
             {
-                if (!patternByTags.ContainsKey(tag))
+                if (!PatternByTags.ContainsKey(tag))
                 {
-                    patternByTags.Add(tag, new HashSet<FlagPatternDef>());
+                    PatternByTags.Add(tag, []);
                 }
 
-                patternByTags[tag].Add(allDef3);
+                PatternByTags[tag].Add(allDef3);
             }
         }
 
         var harmony = new Harmony("Amnabi.Flags");
         harmony.PatchAll();
         harmony.Patch(AccessTools.Method(typeof(ExpandableWorldObjectsUtility), "ExpandableWorldObjectsOnGUI"),
-            null, new HarmonyMethod(typeof(Harmony_Flags), "ExpandableWorldObjectsOnGUI"));
+            null, new HarmonyMethod(typeof(HarmonyFlags), "ExpandableWorldObjectsOnGUI"));
         harmony.Patch(AccessTools.Method(typeof(SymbolResolver_Settlement), "Resolve"), null,
-            new HarmonyMethod(typeof(Harmony_Flags), "GenerateFlags"));
+            new HarmonyMethod(typeof(HarmonyFlags), "GenerateFlags"));
         harmony.Patch(AccessTools.Method(typeof(Pawn_ApparelTracker), "Wear"), null,
-            new HarmonyMethod(typeof(Harmony_Flags), "WearPostPatch"));
+            new HarmonyMethod(typeof(HarmonyFlags), "WearPostPatch"));
     }
 
     public static void ensureFlagTextureLoadedInCurrentThread()
     {
         foreach (var allDef in DefDatabase<FlagPatternDef>.AllDefs)
         {
-            var unused = allDef.Pattern;
+            _ = allDef.Pattern;
         }
     }
 
-    public static void WearPostPatch(Pawn_ApparelTracker __instance, Apparel newApparel,
-        bool dropReplacedApparel = true, bool locked = false)
+    public static void WearPostPatch(Apparel newApparel)
     {
         try
         {
@@ -134,9 +133,9 @@ public static class Harmony_Flags
             return;
         }
 
-        temporaryWorldObjects.Clear();
-        temporaryWorldObjects.AddRange(Find.WorldObjects.AllWorldObjects);
-        SortByExpandingIconPriority(temporaryWorldObjects);
+        TemporaryWorldObjects.Clear();
+        TemporaryWorldObjects.AddRange(Find.WorldObjects.AllWorldObjects);
+        SortByExpandingIconPriority(TemporaryWorldObjects);
         var worldTargeter = Find.WorldTargeter;
         if (worldTargeter.IsTargeting)
         {
@@ -144,7 +143,7 @@ public static class Harmony_Flags
         }
 
         var settlement = default(Settlement);
-        foreach (var tempObject in temporaryWorldObjects)
+        foreach (var tempObject in TemporaryWorldObjects)
         {
             try
             {
@@ -214,6 +213,6 @@ public static class Harmony_Flags
             }
         }
 
-        temporaryWorldObjects.Clear();
+        TemporaryWorldObjects.Clear();
     }
 }

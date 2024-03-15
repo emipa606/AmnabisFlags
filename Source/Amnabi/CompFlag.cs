@@ -9,25 +9,25 @@ namespace Amnabi;
 
 public class CompFlag : ThingComp, ISettlementAssignableFlag
 {
-    public static Dictionary<BodyTypeDef, OffsetRotation> eastReJigger;
+    public static readonly Dictionary<BodyTypeDef, OffsetRotation> eastReJigger;
 
-    public static Dictionary<BodyTypeDef, OffsetRotation> southReJigger;
+    public static readonly Dictionary<BodyTypeDef, OffsetRotation> southReJigger;
 
-    public static Dictionary<BodyTypeDef, OffsetRotation> northReJigger;
+    public static readonly Dictionary<BodyTypeDef, OffsetRotation> northReJigger;
 
-    public static Dictionary<BodyTypeDef, OffsetRotation> westReJigger;
+    public static readonly Dictionary<BodyTypeDef, OffsetRotation> westReJigger;
 
-    public static List<Mesh> a239n7a9;
+    public static readonly List<Mesh> a239n7a9;
 
-    public static List<Mesh> a239n7b9;
+    public static readonly List<Mesh> a239n7b9;
 
-    public static List<Mesh> a239n7a7;
+    public static readonly List<Mesh> a239n7a7;
 
-    public static List<Mesh> a239n7b7;
+    public static readonly List<Mesh> a239n7b7;
 
-    public static List<Mesh> a239n7a8;
+    public static readonly List<Mesh> a239n7a8;
 
-    public static List<Mesh> a239n7b8;
+    public static readonly List<Mesh> a239n7b8;
 
     public static Mesh FlagMesh1_5O;
 
@@ -71,12 +71,12 @@ public class CompFlag : ThingComp, ISettlementAssignableFlag
         southReJigger = new Dictionary<BodyTypeDef, OffsetRotation>();
         northReJigger = new Dictionary<BodyTypeDef, OffsetRotation>();
         westReJigger = new Dictionary<BodyTypeDef, OffsetRotation>();
-        a239n7a9 = new List<Mesh>();
-        a239n7b9 = new List<Mesh>();
-        a239n7a7 = new List<Mesh>();
-        a239n7b7 = new List<Mesh>();
-        a239n7a8 = new List<Mesh>();
-        a239n7b8 = new List<Mesh>();
+        a239n7a9 = [];
+        a239n7b9 = [];
+        a239n7a7 = [];
+        a239n7b7 = [];
+        a239n7a8 = [];
+        a239n7b8 = [];
         offsetOutlineVector = new Vector3(0f, -0.1f, 0f);
         eastReJigger.Add(BodyTypeDefOf.Female, new OffsetRotation
         {
@@ -101,8 +101,8 @@ public class CompFlag : ThingComp, ISettlementAssignableFlag
             };
             offsetRotation.offset.x = 0f - offsetRotation.offset.x;
             offsetRotation.rotate = eastReJigger[key].rotate;
-            offsetRotation.rotate.ToAxisAngle(out var axis, out var angle);
-            offsetRotation.rotate = Quaternion.AxisAngle(axis, 0f - angle);
+            offsetRotation.rotate.ToAngleAxis(out var axis, out var angle);
+            offsetRotation.rotate = Quaternion.AngleAxis(axis, Vector3.zero - angle);
             westReJigger.Add(key, offsetRotation);
         }
     }
@@ -413,7 +413,7 @@ public class CompFlag : ThingComp, ISettlementAssignableFlag
         {
             num = 0f;
         }
-        else if (building.Map is { weatherManager: { } })
+        else if (building.Map is { weatherManager: not null })
         {
             num += building.Map.weatherManager.CurWindSpeedOffset;
             num *= building.Map.weatherManager.CurWindSpeedFactor;
@@ -842,7 +842,7 @@ public class CompFlag : ThingComp, ISettlementAssignableFlag
             defaultLabel = "Amnabi.DesignFlag".Translate(),
             icon = AmnabiFlagTextures.Copy,
             defaultDesc = "Amnabi.DesignFlag.Desc".Translate(),
-            disabled = flagID.Equals("TILEID-1"),
+            Disabled = flagID.Equals("TILEID-1"),
             action = delegate { Find.WindowStack.Add(new Dialog_ModifyFlag(this, new Vector2(1.5f, 1f))); },
             hotKey = KeyBindingDefOf.Misc3
         };
@@ -851,7 +851,7 @@ public class CompFlag : ThingComp, ISettlementAssignableFlag
             defaultLabel = "Amnabi.Preset".Translate(),
             icon = AmnabiFlagTextures.Paste,
             defaultDesc = "Amnabi.Preset.Desc".Translate(),
-            disabled = flagID.Equals("TILEID-1"),
+            Disabled = flagID.Equals("TILEID-1"),
             action = delegate { Find.WindowStack.Add(new Dialog_SaveLoadFlag(this)); },
             hotKey = KeyBindingDefOf.Misc3
         };
@@ -877,7 +877,7 @@ public class CompFlag : ThingComp, ISettlementAssignableFlag
             defaultLabel = "Amnabi.DesignFlag".Translate(),
             icon = AmnabiFlagTextures.Copy,
             defaultDesc = "Amnabi.DesignFlag.Desc".Translate(),
-            disabled = flagID.Equals("TILEID-1"),
+            Disabled = flagID.Equals("TILEID-1"),
             action = delegate { Find.WindowStack.Add(new Dialog_ModifyFlag(this, new Vector2(1.5f, 1f))); },
             hotKey = KeyBindingDefOf.Misc3
         };
@@ -886,7 +886,7 @@ public class CompFlag : ThingComp, ISettlementAssignableFlag
             defaultLabel = "Amnabi.Preset".Translate(),
             icon = AmnabiFlagTextures.Paste,
             defaultDesc = "Amnabi.Preset.Desc".Translate(),
-            disabled = flagID.Equals("TILEID-1"),
+            Disabled = flagID.Equals("TILEID-1"),
             action = delegate { Find.WindowStack.Add(new Dialog_SaveLoadFlag(this)); },
             hotKey = KeyBindingDefOf.Misc3
         };

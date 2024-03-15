@@ -8,9 +8,9 @@ namespace Amnabi;
 
 public class WC_Flag : WorldComponent
 {
-    public static List<Flag> popInvalidBeforeSave = new List<Flag>();
+    public static readonly List<Flag> PopInvalidBeforeSave = [];
 
-    public static List<string> keyIterBeforeSave = new List<string>();
+    public static readonly List<string> keyIterBeforeSave = [];
 
     public static WC_Flag staticVersion;
 
@@ -31,12 +31,12 @@ public class WC_Flag : WorldComponent
             foreach (var allFaction in Find.FactionManager.AllFactions)
             {
                 if (FlagsCore.GetFlagFaction(allFaction) != null ||
-                    !Harmony_Flags.prefabricatedFlagDefSort.ContainsKey(allFaction.def))
+                    !HarmonyFlags.PrefabricatedFlagDefSort.TryGetValue(allFaction.def, out var value))
                 {
                     continue;
                 }
 
-                var elementByWeight = Harmony_Flags.prefabricatedFlagDefSort[allFaction.def]
+                var elementByWeight = value
                     .RandomElementByWeight(x => x.probability);
                 if (elementByWeight == null)
                 {
@@ -71,7 +71,7 @@ public class WC_Flag : WorldComponent
     public override void ExposeData()
     {
         Scribe_Collections.Look(ref allFactionFlagGenerators, "AFFG", LookMode.Value, LookMode.Deep);
-        popInvalidBeforeSave.Clear();
+        PopInvalidBeforeSave.Clear();
         keyIterBeforeSave.Clear();
         foreach (var key in FlagsCore.flagIDToFlag.Keys)
         {
@@ -81,7 +81,7 @@ public class WC_Flag : WorldComponent
             }
 
             FlagsCore.flagIDToFlag[key].recycle();
-            popInvalidBeforeSave.Add(FlagsCore.flagIDToFlag[key]);
+            PopInvalidBeforeSave.Add(FlagsCore.flagIDToFlag[key]);
             keyIterBeforeSave.Add(key);
         }
 
@@ -96,16 +96,16 @@ public class WC_Flag : WorldComponent
             FlagsCore.flagIDToFlag = new Dictionary<string, Flag>();
         }
 
-        popInvalidBeforeSave.Clear();
+        PopInvalidBeforeSave.Clear();
         keyIterBeforeSave.Clear();
     }
 
     public FactionFlagTags factionFlagGen_instance(Faction fac)
     {
         var key = fac == null ? "Factionless" : fac.GetUniqueLoadID();
-        if (allFactionFlagGenerators.ContainsKey(key))
+        if (allFactionFlagGenerators.TryGetValue(key, out var instance))
         {
-            return allFactionFlagGenerators[key];
+            return instance;
         }
 
         allFactionFlagGenerators.Add(key, new FactionFlagTags());

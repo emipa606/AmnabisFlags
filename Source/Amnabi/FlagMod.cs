@@ -15,7 +15,7 @@ public class FlagMod : Mod
     {
         settings = GetSettings<FlagSettings>();
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.AmnabisFlags"));
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
     public override void DoSettingsWindowContents(Rect inRect)

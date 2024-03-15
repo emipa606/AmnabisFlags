@@ -6,7 +6,7 @@ namespace Amnabi;
 [StaticConstructorOnStartup]
 public static class StaticMeshHelper
 {
-    public static float outlineExtra;
+    public static readonly float outlineExtra;
 
     static StaticMeshHelper()
     {

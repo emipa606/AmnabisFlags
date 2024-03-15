@@ -18,16 +18,11 @@ public class Flag : IExposable, ILoadReferenceable
 
     public int patternMax;
 
-    public List<FlagPattern> patternStack = new List<FlagPattern>();
+    public List<FlagPattern> patternStack = [];
 
-    public int randID;
+    public int randID = Rand.Int;
 
     public RecycleableTexture recyclableTexture;
-
-    public Flag()
-    {
-        randID = Rand.Int;
-    }
 
     public void ExposeData()
     {

@@ -6,12 +6,12 @@ namespace Amnabi;
 
 public class Dialog_URLInput : Window
 {
+    public readonly CompFlag thisCompFlag;
     protected string curName;
 
     private bool focusedRenameField;
 
     private int startAcceptingInputAtFrame;
-    public CompFlag thisCompFlag;
 
     public Dialog_URLInput(CompFlag comp)
     {
@@ -34,12 +34,7 @@ public class Dialog_URLInput : Window
 
     protected virtual AcceptanceReport NameIsValid(string name)
     {
-        if (name.Length == 0)
-        {
-            return false;
-        }
-
-        return true;
+        return name.Length != 0;
     }
 
     public override void DoWindowContents(Rect inRect)

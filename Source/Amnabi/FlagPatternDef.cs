@@ -7,9 +7,9 @@ namespace Amnabi;
 
 public class FlagPatternDef : Def
 {
-    public List<float> availableRandomizedAngles = new List<float>();
+    public readonly List<float> availableRandomizedAngles = [];
 
-    public string category = "None";
+    public readonly string category = "None";
 
     public Vector2 generateScale = new Vector2(1f, 1f);
 
@@ -17,11 +17,11 @@ public class FlagPatternDef : Def
 
     private Texture2D readableTexture;
 
-    public List<string> tags = new List<string>();
+    public List<string> tags = [];
 
     private string texture;
 
-    public List<string> themeTags = new List<string>();
+    public List<string> themeTags = [];
 
     [Unsaved] private Texture2D theTexture;
 
@@ -53,11 +53,6 @@ public class FlagPatternDef : Def
 
     public float getRandomAngle()
     {
-        if (availableRandomizedAngles.NullOrEmpty())
-        {
-            return 0f;
-        }
-
-        return availableRandomizedAngles.RandomElement();
+        return availableRandomizedAngles.NullOrEmpty() ? 0f : availableRandomizedAngles.RandomElement();
     }
 }

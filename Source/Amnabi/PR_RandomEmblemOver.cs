@@ -13,7 +13,7 @@ public class PR_RandomEmblemOver : PR_EmblemOver
         }
 
         var bestColor = fft.getBestColor(layerNow, "EmblemTop");
-        var fpd = Harmony_Flags.patternByTags["EmblemTop"]
+        var fpd = HarmonyFlags.PatternByTags["EmblemTop"]
             .RandomElementByWeight(x => IntersectionAdjustedPoints(x, fft));
         var scale = layerNow.MinDims() * 0.8f;
         layerNow.attachPost(layerNow.createFlagPattern(fpd, bestColor, scale, 0.5, 0.5, 0.0))

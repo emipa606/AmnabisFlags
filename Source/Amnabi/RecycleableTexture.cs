@@ -5,7 +5,7 @@ namespace Amnabi;
 
 public class RecycleableTexture
 {
-    public static List<RecycleableTexture> recyclableStatic;
+    public static readonly List<RecycleableTexture> recyclableStatic;
 
     public Texture2D flagTextureCompiled;
 
@@ -15,7 +15,7 @@ public class RecycleableTexture
 
     static RecycleableTexture()
     {
-        recyclableStatic = new List<RecycleableTexture>();
+        recyclableStatic = [];
     }
 
     private RecycleableTexture()

@@ -6,7 +6,7 @@ namespace Amnabi;
 
 public class ListColor : IExposable
 {
-    public List<Color> internalList = new List<Color>();
+    public List<Color> internalList = [];
 
     public virtual void ExposeData()
     {

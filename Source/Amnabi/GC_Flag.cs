@@ -6,7 +6,7 @@ public class GC_Flag : GameComponent
 {
     public static GC_Flag instance;
 
-    public int instanceID;
+    public readonly int instanceID;
 
     public GC_Flag(Game game)
     {
