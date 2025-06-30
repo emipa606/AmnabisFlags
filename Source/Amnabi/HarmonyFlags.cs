@@ -128,7 +128,7 @@ public static class HarmonyFlags
 
     public static void ExpandableWorldObjectsOnGUI()
     {
-        if (ExpandableWorldObjectsUtility.TransitionPct == 0f || !FlagSettings.displayFlagOnWorldMap)
+        if (!FlagSettings.displayFlagOnWorldMap)
         {
             return;
         }

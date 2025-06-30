@@ -14,9 +14,9 @@ public class WC_Flag : WorldComponent
 
     public static WC_Flag staticVersion;
 
-    public static Dictionary<string, Flag> flagTempLoader = new Dictionary<string, Flag>();
+    public static Dictionary<string, Flag> flagTempLoader = new();
 
-    public Dictionary<string, FactionFlagTags> allFactionFlagGenerators = new Dictionary<string, FactionFlagTags>();
+    public Dictionary<string, FactionFlagTags> allFactionFlagGenerators = new();
 
     public WC_Flag(World world)
         : base(world)
@@ -24,7 +24,7 @@ public class WC_Flag : WorldComponent
         staticVersion = this;
     }
 
-    public override void FinalizeInit()
+    public override void FinalizeInit(bool fromLoad)
     {
         try
         {

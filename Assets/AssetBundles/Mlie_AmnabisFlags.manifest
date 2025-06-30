@@ -1,0 +1,77 @@
+ManifestFileVersion: 0
+CRC: 2589801082
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9bf020f62d8fd924ab382fc6c04afa63
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9bf020f62d8fd924ab382fc6c04afa63
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_E_Sticks.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagOnWall_east.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagPoleVertical.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_Square.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Nepal_m.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_E_Skull.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_WingA.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_ShieldA.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_Star5.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Circle.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_AK47.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagOnWall_north.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagPole_UI.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/FlagOverlay.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagPoleTall.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_WingB.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_E_Sickle.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_ShieldB.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_Wave.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_TriangleB.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_E_Arrow.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Rectangle15_m.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Ohio_m.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_E_Sword.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagPoleVertical_UI.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/Apparel/BannerParts/BannerBeltStickTop.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Rectangle15.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/Apparel/BannerParts/FlagOutline.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_Diamond.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_Star6.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/FlagBase.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/TriangleUp.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_WingC.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagPole.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_Star8.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_Fire.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/TriangleDown_m.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/Apparel/BannerParts/BannerBeltStick.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Ohio.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_WaveB.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagPoleTallVertical.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagOnWall_south.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Nepal.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagTest.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagPoleTallVertical_UI.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Things/FlagPole/FlagPoleTall_UI.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Square_m.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Square.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/TriangleUp_m.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_Circle.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_E_Cresent.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_RomanCrown.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/TriangleDown.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_TriangleA.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/FlagShape/Circle_m.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_E_Hammer.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_SemiCircle.png
+- Assets/Data/Mlie.AmnabisFlags/Textures/Flags/Pattern_E_Axe.png
+Dependencies: []

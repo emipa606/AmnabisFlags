@@ -17,7 +17,7 @@ public static class FlagsCore
 
     public static bool randomLoadMode;
 
-    public static Dictionary<string, Flag> flagIDToFlag = new Dictionary<string, Flag>();
+    public static Dictionary<string, Flag> flagIDToFlag = new();
 
     public static List<Flag> presets = [];
 
@@ -250,7 +250,7 @@ public static class FlagsCore
             try
             {
                 randomLoadMode = true;
-                ScribeMetaHeaderUtility.LoadGameDataHeader(ScribeMetaHeaderUtility.ScribeHeaderMode.None, true);
+                ScribeMetaHeaderUtility.LoadGameDataHeader(ScribeMetaHeaderUtility.ScribeHeaderMode.None, false);
                 var list = new List<Flag>();
                 Scribe_Collections.Look(ref list, "presets", LookMode.Deep);
                 presets = list;

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: flagpole -->
+  <AMN_PoleFlag.label>flagpole</AMN_PoleFlag.label>
+  <!-- EN: A flagpole. Put a flag on it! -->
+  <AMN_PoleFlag.description>A flagpole. Put a flag on it!</AMN_PoleFlag.description>
+  <!-- EN: tall flagpole -->
+  <AMN_PoleFlagTall.label>tall flagpole</AMN_PoleFlagTall.label>
+  <!-- EN: A tall flagpole. Put a flag on it! -->
+  <AMN_PoleFlagTall.description>A tall flagpole. Put a flag on it!</AMN_PoleFlagTall.description>
+  <!-- EN: tall vertical flagpole -->
+  <AMN_PoleFlagTallVertical.label>tall vertical flagpole</AMN_PoleFlagTallVertical.label>
+  <!-- EN: A tall flagpole. Put a flag on it! -->
+  <AMN_PoleFlagTallVertical.description>A tall flagpole. Put a flag on it!</AMN_PoleFlagTallVertical.description>
+  <!-- EN: vertical flagpole -->
+  <AMN_PoleFlagVertical.label>vertical flagpole</AMN_PoleFlagVertical.label>
+  <!-- EN: A flagpole. Put a flag on it! -->
+  <AMN_PoleFlagVertical.description>A flagpole. Put a flag on it!</AMN_PoleFlagVertical.description>
+  <!-- EN: flag on a wall -->
+  <AMN_WallFlag.label>flag on a wall</AMN_WallFlag.label>
+  <!-- EN: A flag on a wall. -->
+  <AMN_WallFlag.description>A flag on a wall.</AMN_WallFlag.description>
+</LanguageData>

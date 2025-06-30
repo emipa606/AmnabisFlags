@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: banner belt(style A) -->
+  <Apparel_BannerBeltStyleA.label>banner belt(style A)</Apparel_BannerBeltStyleA.label>
+  <!-- EN: A belt capable of holding a banner with a flag in it. -->
+  <Apparel_BannerBeltStyleA.description>A belt capable of holding a banner with a flag in it.</Apparel_BannerBeltStyleA.description>
+  <!-- EN: banner belt(style B) -->
+  <Apparel_BannerBeltStyleB.label>banner belt(style B)</Apparel_BannerBeltStyleB.label>
+  <!-- EN: A belt capable of holding a banner with a flag in it. -->
+  <Apparel_BannerBeltStyleB.description>A belt capable of holding a banner with a flag in it.</Apparel_BannerBeltStyleB.description>
+  <!-- EN: banner belt(style C) -->
+  <Apparel_BannerBeltStyleC.label>banner belt(style C)</Apparel_BannerBeltStyleC.label>
+  <!-- EN: A belt capable of holding a banner with a flag in it. -->
+  <Apparel_BannerBeltStyleC.description>A belt capable of holding a banner with a flag in it.</Apparel_BannerBeltStyleC.description>
+</LanguageData>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: AK47 -->
+  <Pattern_AK47.label>AK47</Pattern_AK47.label>
+  <!-- EN: circle -->
+  <Pattern_Circle.label>circle</Pattern_Circle.label>
+  <!-- EN: diamond -->
+  <Pattern_Diamond.label>diamond</Pattern_Diamond.label>
+  <!-- EN: Arrow -->
+  <Pattern_E_Arrow.label>Arrow</Pattern_E_Arrow.label>
+  <!-- EN: Axe -->
+  <Pattern_E_Axe.label>Axe</Pattern_E_Axe.label>
+  <!-- EN: cresent -->
+  <Pattern_E_Cresent.label>cresent</Pattern_E_Cresent.label>
+  <!-- EN: hammer -->
+  <Pattern_E_Hammer.label>hammer</Pattern_E_Hammer.label>
+  <!-- EN: sickle -->
+  <Pattern_E_Sickle.label>sickle</Pattern_E_Sickle.label>
+  <!-- EN: Skull and bones -->
+  <Pattern_E_Skull.label>Skull and bones</Pattern_E_Skull.label>
+  <!-- EN: Fasces Sticks -->
+  <Pattern_E_Sticks.label>Fasces Sticks</Pattern_E_Sticks.label>
+  <!-- EN: sword -->
+  <Pattern_E_Sword.label>sword</Pattern_E_Sword.label>
+  <!-- EN: Fire -->
+  <Pattern_Fire.label>Fire</Pattern_Fire.label>
+  <!-- EN: Roman Crown -->
+  <Pattern_RomanCrown.label>Roman Crown</Pattern_RomanCrown.label>
+  <!-- EN: semicircle -->
+  <Pattern_SemiCircle.label>semicircle</Pattern_SemiCircle.label>
+  <!-- EN: Shield A -->
+  <Pattern_ShieldA.label>Shield A</Pattern_ShieldA.label>
+  <!-- EN: Shield B -->
+  <Pattern_ShieldB.label>Shield B</Pattern_ShieldB.label>
+  <!-- EN: square -->
+  <Pattern_Square.label>square</Pattern_Square.label>
+  <!-- EN: 5-pointed star -->
+  <Pattern_Star5.label>5-pointed star</Pattern_Star5.label>
+  <!-- EN: 6-pointed star -->
+  <Pattern_Star6.label>6-pointed star</Pattern_Star6.label>
+  <!-- EN: 8-pointed star -->
+  <Pattern_Star8.label>8-pointed star</Pattern_Star8.label>
+  <!-- EN: Triangle 1 -->
+  <Pattern_TriangleA.label>Triangle 1</Pattern_TriangleA.label>
+  <!-- EN: Triangle 2 -->
+  <Pattern_TriangleB.label>Triangle 2</Pattern_TriangleB.label>
+  <!-- EN: wave -->
+  <Pattern_Wave.label>wave</Pattern_Wave.label>
+  <!-- EN: wave B -->
+  <Pattern_WaveB.label>wave B</Pattern_WaveB.label>
+  <!-- EN: WingA -->
+  <Pattern_WingA.label>WingA</Pattern_WingA.label>
+  <!-- EN: WingB -->
+  <Pattern_WingB.label>WingB</Pattern_WingB.label>
+  <!-- EN: WingC -->
+  <Pattern_WingC.label>WingC</Pattern_WingC.label>
+</LanguageData>
